@@ -15,14 +15,14 @@ import org.testcontainers.utility.DockerImageName;
 public class MongoTests {
 
     @Container
-    static final MongoDBContainer mongoDBContainer = new MongoDBContainer(DockerImageName.parse("mongo:4.0.10"));
+    static final MongoDBContainer mongoDBContainer = new MongoDBContainer(DockerImageName.parse("mongo:5.0.12"));
 
     @DynamicPropertySource
     static void setProperties(DynamicPropertyRegistry registry) {
         registry.add("spring.data.mongodb.uri", mongoDBContainer::getReplicaSetUrl);
     }
 
-    
+
     @Test
     public void test() {
         assert true == true;
