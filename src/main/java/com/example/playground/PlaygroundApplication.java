@@ -7,7 +7,6 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 @ComponentScan(basePackages = {"com.example.playground"})
-//@EnableAutoConfiguration(exclude = {MongoAutoConfiguration.class})
 @SpringBootApplication
 @EnableScheduling
 @EnableMongoRepositories

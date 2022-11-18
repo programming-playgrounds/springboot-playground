@@ -1,6 +1,6 @@
-package com.example.playground.iterator;
+package com.example.playground.Schedulers;
 
-import com.example.playground.mongo.model.DateRecord;
+import com.example.playground.MongoDb.model.DateRecord;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.core.MongoTemplate;
@@ -8,14 +8,13 @@ import org.springframework.scheduling.annotation.Scheduled;
 
 @Configuration
 @Slf4j
-public class DateRecorder {
-
+public class DateScheduler {
 
     private MongoTemplate mongoTemplate;
 
     private DateRecord dateRecord;
 
-    public DateRecorder(MongoTemplate mongoTemplate) {
+    public DateScheduler(MongoTemplate mongoTemplate) {
         this.mongoTemplate = mongoTemplate;
     }
 

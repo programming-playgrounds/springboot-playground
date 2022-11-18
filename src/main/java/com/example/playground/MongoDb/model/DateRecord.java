@@ -1,4 +1,4 @@
-package com.example.playground.mongo.model;
+package com.example.playground.MongoDb.model;
 
 import lombok.Getter;
 import lombok.Setter;
