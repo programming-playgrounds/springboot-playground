@@ -16,7 +16,7 @@ public class Storage {
     @Value("${gcs.host}")
     private String host;
 
-    @Value("{gcs.default.bucket}")
+    @Value("${gcs.default.bucket}")
     private String bucket;
 
     public Storage() throws Exception {
@@ -29,7 +29,8 @@ public class Storage {
         }
     }
 
-    public void getBlobNames(String bucket) {
+    public void getBlobNames() {
+        log.info("bucket: {}", bucket);
         for (Blob blob : storage.list(bucket).iterateAll()) {
             log.info("In Bucket, {}, there exist blob : {}", bucket, blob.getName());
         }
