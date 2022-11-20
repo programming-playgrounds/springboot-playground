@@ -1,4 +1,4 @@
-package com.example.playground.MongoDb.config;
+package com.example.playground.service.mongo.config;
 
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.model.IndexOptions;

@@ -1,6 +1,6 @@
 package com.example.playground.Schedulers;
 
-import com.example.playground.MongoDb.model.DateRecord;
+import com.example.playground.service.mongo.model.DateRecord;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.core.MongoTemplate;

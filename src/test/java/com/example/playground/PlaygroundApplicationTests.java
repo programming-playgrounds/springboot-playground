@@ -10,4 +10,5 @@ class PlaygroundApplicationTests extends AbstractTestContainersBase {
     void contextLoads() {
     }
 
+
 }
