@@ -1,4 +1,4 @@
-package com.example.playground.Schedulers;
+package com.example.playground.schedulers;
 
 import com.example.playground.service.google.Storage;
 import lombok.extern.slf4j.Slf4j;
@@ -10,7 +10,8 @@ import java.io.IOException;
 @Configuration
 @Slf4j
 public class GcsScheduler {
-    //Authenticate to google before running locally: gcloud auth application-default login
+    // Authenticate to google before running locally: gcloud auth
+    // application-default login
 
     private Storage storage;
 
